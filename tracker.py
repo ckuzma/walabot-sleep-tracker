@@ -70,8 +70,8 @@ class SleepTracker:
 class Database:
     def __init__(self):
         pass
-        
-# if __name__ == '__main__':
-#     print("Sleep tracker initializing...")
-#     tracker = SleepTracker()
-#     tracker.track()
+
+if __name__ == '__main__':
+    print("Sleep tracker initializing...")
+    tracker = SleepTracker()
+    tracker.track()
