@@ -5,7 +5,6 @@ import sys
 import time
 
 ## Import our stuff
-from api.bokeh_api import BokehAPI
 from api.walabot_api import WalabotAPI
 
 # Variables
