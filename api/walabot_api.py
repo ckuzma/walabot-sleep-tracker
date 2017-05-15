@@ -1,7 +1,13 @@
 import json
 import os
 from sys import platform
-import WalabotAPI as walabot
+
+from imp import load_source
+walabot = None
+if os.name == 'nt': # Windows
+    walabot = load_source('WalabotAPI', 'C:/Program Files/Walabot/WalabotSDK/python/WalabotAPI.py')
+else: # Unix
+    walabot = load_source('WalabotAPI', '/usr/share/walabot/python/WalabotAPI.py')
 
 class WalabotAPI:
     def __init__(self):
